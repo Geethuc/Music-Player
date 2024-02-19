@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh; 
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.music-player {
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+nav .circle {
+    border-radius: 50%;
+    width: 30px; 
+    height: 30px;
+    line-height: 30px;
+    background-color: palevioletred;
+    color: white;
+    box-shadow: 0 3px 6px rgba(255, 26, 26, 0.22); 
+}
+
+.song-img {
+    width: 100%; 
+    max-width: 220px;
+    border-radius: 50%;
+    border: 8px solid #000;
+    box-shadow: 0 10px 40px rgba(255, 26, 26, 0.22); 
+    margin-top: 20px; 
+}
+
+.music-player h1 {
+    font-size: 18px; 
+    font-weight: 400;
+    color: #333;
+    margin-top: 15px; 
+}
+
+
+
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control div {
+    width: 50px; 
+    height: 50px;
+    margin: 15px; 
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #f53192;
+    box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+    cursor: pointer;
+}
+
+.control div:hover {
+    background: #f53192;
+    color: #fff;
+}
+
+.control div:nth-child(2) {
+    transform: scale(1.3); 
+    background: #f53192;
+    color: #fff;
+}
+
+.menu {
+    background-color: white;
+    color: #000;
+    font-size: 15px;
+}
+/* .custom-audio {
+    display: none; 
+
+} */
+@media only screen and (max-width: 600px) {
+    .music-player {
+        width: 100%; 
+    }
+
+    .song-img {
+        margin-top: 10px; 
+    }
+
+    nav .circle {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+
+    .control div {
+        width: 40px; 
+        height: 40px;
+        margin: 10px; 
+    }
+   
+}
+

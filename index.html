@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Linking Font Awesome -->
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="music-player">
+             <nav>
+                 
+                 <div class="circle" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ol class="menu" id="menu">
+                    <!-- Menu items will be dynamically generated here -->
+                </ol>
+                <div class="circle" onclick="previousSong()">
+                    <i class="fas fa-angle-left"></i>
+                </div>
+                
+             </nav>
+             <img src="img.png" class="song-img" alt="Song Cover">
+             <h1 id="songTitle">Puthuvellai Mazhai</h1>
+             <audio controls id="song" class="custom-audio">
+                 <!-- Update the source with the initial song -->
+                 <source  src="Pudhu-Vellai-Mazhai-Female-Version.mp3" type="audio/mp3"  >
+             </audio>
+             
+            
+            
+             <div class="control">
+                 <div onclick="previousSong() "><i class="fas fa-backward"></i></div>
+                 <div onclick="playpause()"><i class="fas fa-play" id="ctrlIcon"></i></div>
+                 <div onclick="nextSong()"><i class="fas fa-forward"></i></div>
+             </div>
+         </div>
+     </div>
+     
+
+<script src="script.js"></script>
+</body>
+</html>
+
